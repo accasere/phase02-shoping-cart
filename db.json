@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Cookie Chocolate",
+      "price": 1.25,
+      "description": "default text",
+      "image": "https://freepngimg.com/thumb/chocolate/159370-cookie-homemade-chocolate-download-hd.png"
+    },
+    {
+      "id": 2,
+      "title": "Cookie Homemade Chocolate",
+      "price": 16.65,
+      "description": "default text",
+      "image": "https://freepngimg.com/thumb/battery/135222-battery-cell-rechargeable-hq-image-free.png"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "some comment",
+      "email": 1,
+      "mobile": 1213
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

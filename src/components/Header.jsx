@@ -3,13 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Outlet, Link} from 'react-router-dom'
+import './Cart.css'
 
-function Header() {
+
+
+function Header( {cartItems}) {
   return (
+    <>
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">AS Store's</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -17,20 +21,13 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
+            <Nav.Link as={Link} to="/products">Products</Nav.Link>
+            <Nav.Link as={Link} to="/addproducts">Add Product</Nav.Link>
+            <Nav.Link as={Link} to="/signup">Signup</Nav.Link>
+            <Nav.Link as={Link} to="/login">Login</Nav.Link>
+            <Nav.Link as={Link} to="/cart">Cart {" "}
+                <span className="cart-length">{cartItems.length === 0? "0" : cartItems.length}</span>
+            
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
@@ -45,7 +42,22 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <div>
+        <Outlet>
+
+
+        </Outlet>
+
+    </div>
+    </>
+
+
+
+
   );
 }
 
 export default Header;
+
+
+
