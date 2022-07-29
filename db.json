@@ -15,19 +15,18 @@
       "image": "https://freepngimg.com/thumb/battery/135222-battery-cell-rechargeable-hq-image-free.png"
     },
     {
-      "id": 3
+      "id": 3,
+      "title": "Chocolate",
+      "price": "2.32",
+      "description": "home made chocolate",
+      "image": "https://pngimg.com/uploads/chocolate/chocolate_PNG11.png"
     },
     {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
+      "id": 4,
+      "title": "Rose Chocolate",
+      "price": "5.97",
+      "description": "Home made rose of chocolate",
+      "image": "https://pngimg.com/uploads/chocolate/chocolate_PNG26.png"
     }
   ],
   "users": [
@@ -36,6 +35,12 @@
       "name": "some comment",
       "email": 1,
       "mobile": 1213
+    },
+    {
+      "name": "sdas",
+      "email": "sasaf",
+      "mobile": "sadsad",
+      "id": 2
     }
   ],
   "profile": {

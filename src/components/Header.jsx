@@ -8,6 +8,7 @@ import './Cart.css'
 
 
 
+
 function Header( {cartItems}) {
   return (
     <>
@@ -42,6 +43,7 @@ function Header( {cartItems}) {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
     <div>
         <Outlet>
 
